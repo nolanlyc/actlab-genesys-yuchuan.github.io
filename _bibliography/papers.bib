@@ -1,13 +1,16 @@
 ---
 ---
 
-@INPROCEEDINGS{verigoodml,
-  author={Esmaeilzadeh, Hadi and Ghodrati, Soroush and Gu, Jie and Guo, Shiyu and Kahng, Andrew B. and Kim, Joon Kyung and Kinzer, Sean and Mahapatra, Rohan and Manasi, Susmita Dey and Mascarenhas, Edwin and Sapatnekar, Sachin S. and Varadarajan, Ravi and Wang, Zhiang and Xu, Hanyang and Yatham, Brahmendra Reddy and Zeng, Ziqing},
-  booktitle={2021 IEEE/ACM International Conference On Computer Aided Design (ICCAD)}, 
-  title={VeriGOOD-ML: An Open-Source Flow for Automated ML Hardware Synthesis}, 
-  year={2021},
-  volume={},
-  number={},
-  pages={1-7},
-  doi={10.1109/ICCAD51958.2021.9643449}
+@inproceedings{verigoodml,
+  author = {Esmaeilzadeh, Hadi and Ghodrati, Soroush and Gu, Jie and Guo, Shiyu and Kahng, Andrew B. and Kim, Joon Kyung and Kinzer, Sean and Mahapatra, Rohan and Manasi, Susmita Dey and Mascarenhas, Edwin and Sapatnekar, Sachin S. and Varadarajan, Ravi and Wang, Zhiang and Xu, Hanyang and Yatham, Brahmendra Reddy and Zeng, Ziqing},
+  title = {VeriGOOD-ML: An Open-Source Flow for Automated ML Hardware Synthesis},
+  year = {2021},
+  publisher = {IEEE Press},
+  url = {https://doi.org/10.1109/ICCAD51958.2021.9643449},
+  doi = {10.1109/ICCAD51958.2021.9643449},
+  abstract = {This paper introduces VeriGOOD-ML, an automated methodology for generating Verilog with no human in the loop, starting from a high-level description of a machine learning (ML) algorithm in a standard format such as ONNX. The Verilog RTL is then translated through a back-end design flow to GDSII, driven by a design planning approach that is well tailored to the macro-intensive nature of ML platforms. VeriGOOD-ML uses three approaches to build ML hardware: the TABLA platform uses a dataflow architecture that is well suited to non-DNN ML algorithms; the GeneSys platform, with a systolic array and a SIMD array, is optimized for implementing DNNs; and the Axiline approach synthesizes small ML algorithms by hardcoding the structure of the algorithm into hardware, thus trading off flexibility for performance and power. The overall approach explores the design space of platform configurations and Pareto-optimal-PPA back-end implementations to yield designs that represent different tradeoffs at the algorithmic level between area, power, performance, and execution time. The overall methodology, from architecture to back-end design to hardware implementation, is described in this paper, and the results of VeriGOOD-ML are demonstrated on a set of ML benchmarks.},
+  booktitle = {2021 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},
+  pages = {1–7},
+  numpages = {7},
+  location = {Munich, Germany}
 }
