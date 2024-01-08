@@ -14,4 +14,34 @@ profiles:
     content: about_hadi.md
     image_circular: false # crops the image to make it circular
     more_info: 
+  - align: left
+    image: soroush_headshot.jpg
+    content: about_soroush.md
+    image_circular: false
+    more_info:
+  - align: left
+    image: sean_headshot.jpg
+    content: about_sean.md
+    image_circular: false
+    more_info:
+  - align: left
+    image: rohan_headshot.jpg
+    content: about_rohan.md
+    image_circular: false
+    more_info:
+  - align: left
+    image: hanyang_headshot.jpg
+    content: about_hanyang.md
+    image_circular: false
+    more_info:
+  - align: left
+    image: chris_headshot.jpg
+    content: about_chris.md
+    image_circular: false
+    more_info:
+  - align: left
+    image: lavanya_headshot.jpg
+    content: about_lavanya.md
+    image_circular: false
+    more_info:
 ---
