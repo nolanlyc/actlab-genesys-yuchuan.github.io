@@ -20,3 +20,13 @@ _GeneSys_ is a programmable deep learning acceleration system generator.
 The core computation engines in _GeneSys_ are a systolic array (for operations such as convolution) and SIMD engine (for operations such as ReLU and pooling). _GeneSys_ is parametrizable, and it is possible to automatically generate hardware with different numbers of processing elements, on-chip buffer configurations, and memory bandwidths.
 The generated accelerator acts like a co-processor connected to the host via the PCIe bus.
 The target workloads for the accelerator are computer vision and transformers-based models.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/genesys_workflow.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    An overview of the GeneSys workflow.
+</div>
+
