@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 
-The compiler for GeneSys starts with an ONNX description of an ML algorithm and generates an intermediate representation (IR) in the form of a simultaneous-recursive dataflow graph (sr-DFG).
+The compiler for _GeneSys_ starts with an ONNX description of an ML algorithm and generates an intermediate representation (IR) in the form of a simultaneous-recursive dataflow graph (sr-DFG).
 The sr-DFG is a recursively defined dataflow graph which enables simultaneous access to all levels of operation granularity for flexibly compiling to different architectures.
 Once generated from an ONNX file, the sr-DFG is transformed to a series of parameterized operation kernels.
 The operation kernels are then transformed and optimized by applying an architecture description to the compilation process, which constrains kernel parameters based on hardware attributes such as memory size, bandwidth, and operation capabilities.

@@ -7,7 +7,6 @@ nav: true
 nav_order: 2
 ---
 
-# Architecture
 The overall system consists of two core components: a systolic array and a Tandem Processor.
 Data is supplied to the two engines through the input buffer (IBUF), output buffer (OBUF), instruction memory (IMEM), weight buffer (WBUF), bias buffer (BBUF) and vector memory (VMEM).
 These interfaces harbor programmable data access modules and controller FSMs that together issue the addresses and requests to load or store a tile of data from/to off-chip memory. 
@@ -22,7 +21,7 @@ These interfaces are fully programmable through the instruction set architecture
     </div>
 </div>
 <div class="caption">
-    _GeneSys_ system architecture.
+    GeneSys system architecture.
 </div>
 
 ## Systolic Array
@@ -41,7 +40,7 @@ Finally, the outputs are stored in OBUFF which is a shared sctrachpad that Tande
     </div>
 </div>
 <div class="caption">
-    _GeneSys_ systolic array.
+    GeneSys systolic array.
 </div>
 
 ## Tandem Processor
@@ -116,7 +115,7 @@ The ISA is consist of the serval class which is discribed in detail below.
     </div>
 </div>
 <div class="caption">
-    _GeneSys_ ISA.
+    GeneSys ISA.
 </div>
 
 ## Tandem Processor ISA
