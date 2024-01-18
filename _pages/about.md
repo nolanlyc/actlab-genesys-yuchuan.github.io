@@ -45,7 +45,7 @@ It is highly parameterizable and synthesizable.
 
 In summary, _GeneSys_ is a powerful and versatile framework for generating and deploying deep learning accelerators, leveraging the latest advances in hardware and software technologies. 
 It aims to democratize access to high-performance deep learning systems, enabling researchers and developers to explore new frontiers in the field of artificial intelligence.
-For more information and to access _GeneSys_, please visit our (GitHub)[https://github.com/actlab-genesys/GeneSys/tree/main].
+For more information and to access _GeneSys_, please visit our [GitHub](https://github.com/actlab-genesys/GeneSys/tree/main).
 
 <!-- OLD FRONT PAGE -->
 <!-- _GeneSys_ is a programmable deep learning acceleration system generator.
