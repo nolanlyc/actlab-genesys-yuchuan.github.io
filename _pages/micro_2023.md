@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /tutorials/micro_2023
+permalink: /home/micro_2023 # NOTE: MICRO 2023 tutorial link is different to ensure legacy support because MICRO 2023 workshop/tutorial webpage links to .../home/micro_2023 instead of .../tutorials/micro_2023
 title: MICRO 2023
-description: GeneSys Tutorial at MICRO 2023 | October 29, 2023 | 1:00 PM - 5:00 PM EDT | Harbour Salon A
+description: GeneSys Tutorial | October 29, 2023 | 1:00 PM - 5:00 PM EDT | Harbour Salon A
 nav: false
 nav_order: 0
 ---
@@ -25,7 +25,7 @@ Researchers and developers interested in deep learning systems, compiler develop
 - **Registration:** To secure your spot for our tutorial, please sign up for at least a "One-Day Workshop/Tutorial" with October 29, 2023 as your preferred date of attendance. You can register [here](https://microarch.org/micro56/attend/register.php).
 
 # Schedule
-- **Introduction**
+- **Introduction** ([slides](https://drive.google.com/file/d/1E8Nxq5RPDpJ-WdlaAwh6_UkjYBydnXuk/view?usp=sharing))
   - DNNs, LLMs, and Hardware Acceleration
   - Need for an Open Source Toolchain
   - _GeneSys_ Overview
@@ -35,7 +35,7 @@ Researchers and developers interested in deep learning systems, compiler develop
     - Datacenters
     - Edge
     - Brain-Implantable Devices
-- **GeneSys Architecture**
+- **_GeneSys_ Architecture** ([slides](https://drive.google.com/file/d/1HPd8SXfWXGB0kghUW_ZJxC5kvaqaShP8/view?usp=sharing))
   - Architecture Overview
     - Systolic Array
     - SIMD Array
@@ -48,7 +48,13 @@ Researchers and developers interested in deep learning systems, compiler develop
    - Simulator Overview
    - FPGA Implementation and Synthesis
    - *Interactive Activity* - Run a layer with two different configurations using Vivado infrastructure
-- **Codelet Compiler and Programming Model**
+- **_GeneSys_ Architecture Hardware Verification, Configuration, and Implementation** ([slides](https://drive.google.com/file/d/1xCwBLS6qwOU3qSmTj65pPdOrC9lPvhEE/view?usp=sharing))
+  - Verification Infrastructure
+  - FPGA Implementation and ASIC Synthesis
+  - Running _GeneSys_ on FPGA
+  - *Interactive Activity* - 4x4 emulation on AWS
+  - *Interactive Activity* - 16x16 emulation on AWS
+- **Codelet Compiler and Programming Model** ([slides](https://drive.google.com/file/d/1HM5_2ne8TZROW2Uq0JsTb31fPGdWd85b/view?usp=sharing))
   - Programming Stack and Compilation
   - Compiler Overview
     - Input: ONNX Model
@@ -62,12 +68,12 @@ Researchers and developers interested in deep learning systems, compiler develop
   - *Interactive Activity* - Compiling BERT
   - Adding a New Layer
   - Compiling to a New Target Architecture
-- **Runtime and Drivers**
+- **Runtime and Drivers** ([slides](https://drive.google.com/file/d/1Tc3jDQUbMBjJZesZvIcJi_C9XLjTPJIR/view?usp=sharing))
   - Overview
   - APIs
   - OpenCL Runtime
   - Example Use Cases
-- **Performance Profiling on _GeneSys_**
+- **Performance Profiling on _GeneSys_** ([slides](https://drive.google.com/file/d/1oy48z4ujWjmKxZUqDCITaBrHKVBUpoFy/view?usp=sharing))
   - *Interactive Activity* - Running a transformer block from BERT with various tiling configurations, loop orders, on-chip buffer use, and layer fusion
   - *Interactive Activity* - Analyzing the logs
   - *Interactive Activity* - Using performance counters to investigate layer performance

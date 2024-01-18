@@ -12,5 +12,5 @@ children:
     permalink: /tutorials/hpca_2024
   - title: divider
   - title: MICRO 2023
-    permalink: /tutorials/micro_2023
+    permalink: /home/micro_2023
 ---
