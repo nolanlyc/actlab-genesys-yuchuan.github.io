@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our tutorial was accepted for presentation at the _56th IEEE/ACM International Symposium on Microarchitecture_ (MICRO).
+Our tutorial was accepted for presentation at the _56th IEEE/ACM International Symposium on Microarchitecture_ (MICRO 2023).

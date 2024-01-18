@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our tutorial was accepted for presentation at the _30th IEEE International Symposium on High-Performance Computer Architecture_ (HPCA).
+Our tutorial was accepted for presentation at the _30th IEEE International Symposium on High-Performance Computer Architecture_ (HPCA 2024).
