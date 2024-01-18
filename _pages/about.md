@@ -16,10 +16,42 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-_GeneSys_ is a programmable deep learning acceleration system generator.
+The rapid growth of deep learning models, such as convolutional neural networks (CNNs) and transformers, has been made possible by the substantial increase in computing power. 
+However, as we approach the end of Dennard scaling and face the challenges of dark silicon, the focus has shifted towards developing efficient accelerators to meet the power, performance, and area constraints. 
+While accelerators are essential for improving deep learning performance, it's important to recognize that relying solely on standalone accelerators may not be sufficient for end-to-end applications. 
+Instead, we need to shift our focus to the seamless integration of these accelerators into the software infrastructure. 
+Consequently, we must transition from a narrow emphasis on standalone hardware to a more comprehensive perspective that embraces a holistic system design.
+
+_GeneSys_ is an innovative solution designed to seamlessly integrate accelerators into the software infrastructure, offering a holistic approach to system design. 
+It is specifically engineered to produce complete acceleration systems for emerging deep learning models with minimal human intervention. 
+_GeneSys_ marks a significant advancement in the realm of open-source deep learning hardware, presenting an all-in-one solution for the efficient generation of deep learning accelerators, complete with a cutting-edge compiler and user-friendly APIs for ease of use. 
+Next, we briefly list the key features of _GeneSys_.
+
+**Comprehensive Solution:** _GeneSys_ offers an end-to-end compilation stack, a parameterizable DNN accelerator generator, RTL verification testbenches and regression suite with synthetic and state-of-the-art DNN benchmarks (including transformers like BERT and GPT2), FPGA implementation framework, OpenCL-compliant Linux drivers, and a software simulator for quick profiling and insights.
+
+**Multi-target Compilation Stack:** The Codelet compiler converts ONNX models into an intermediate representation (IR) and performs architecture specific optimizations for various configurations.
+It further supports multiple backends, giving users flexibility in deploying tailored accelerators.
+
+**Accelerator Architecture:** The GeneSys accelerator features a systolic array for operations such as GeMM and convolution, along with a closely coupled specialized SIMD unit for operations such as softmax, pooling, and activation.
+It is highly parameterizable and synthesizable.
+
+**Holistic Evaluation:** _GeneSys_ offers a holistic approach to evaluation, verification, and debugging for efficient design space exploration, encompassing hardware and compiler optimizations.
+
+**ONNX Compatibility:** _GeneSys_ utilizes the Open Neural Network Exchange (ONNX) format to specify deep learning models, ensuring interoperability across various programming environments. It can compile Pytorch/Tensorflow-generated models into the accelerator.
+
+**Minimal Python APIs:** _GeneSys_ provides minimal Python APIs for seamless integration into end-to-end applications, streamlining the development process.
+
+**AWS F1 FPGA Compatibility:** _GeneSys_ is compatible with AWS F1 instances available in the public cloud, enabling users to run end-to-end deep neural networks on these FPGA instances, enhancing its versatility and accessibility.
+
+In summary, _GeneSys_ is a powerful and versatile framework for generating and deploying deep learning accelerators, leveraging the latest advances in hardware and software technologies. 
+It aims to democratize access to high-performance deep learning systems, enabling researchers and developers to explore new frontiers in the field of artificial intelligence.
+For more information and to access _GeneSys_, please visit our (GitHub)[https://github.com/actlab-genesys/GeneSys/tree/main].
+
+<!-- OLD FRONT PAGE -->
+<!-- _GeneSys_ is a programmable deep learning acceleration system generator.
 The core computation engines in _GeneSys_ are a systolic array (for operations such as convolution) and SIMD engine (for operations such as ReLU and pooling). _GeneSys_ is parametrizable, and it is possible to automatically generate hardware with different numbers of processing elements, on-chip buffer configurations, and memory bandwidths.
 The generated accelerator acts like a co-processor connected to the host via the PCIe bus.
-The target workloads for the accelerator are computer vision and transformers-based models.
+The target workloads for the accelerator are computer vision and transformers-based models. -->
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">

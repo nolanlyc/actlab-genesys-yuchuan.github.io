@@ -4,7 +4,7 @@ permalink: /contact/
 title: contact
 description: 
 nav: true
-nav_order: 7
+nav_order: 8
 ---
 
 The best way to reach our team is via Slack.

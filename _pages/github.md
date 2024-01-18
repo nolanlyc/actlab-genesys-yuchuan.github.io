@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /repositories/
-title: repositories
+permalink: /github/
+title: github
 description: GitHub repositories for GeneSys.
 nav: true
 nav_order: 5
