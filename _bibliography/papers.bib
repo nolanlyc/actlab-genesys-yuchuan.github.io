@@ -1,52 +1,38 @@
 ---
 ---
 
-@misc{performance-analysis-dnn-inference,
-  title={Performance Analysis of DNN Inference/Training with Convolution and non-Convolution Operations}, 
-  author={Hadi Esmaeilzadeh and Soroush Ghodrati and Andrew B. Kahng and Sean Kinzer and Susmita Dey Manasi and Sachin S. Sapatnekar and Zhiang Wang},
-  year={2023},
-  eprint={2306.16767},
-  archivePrefix={arXiv},
-  primaryClass={cs.AR}
-}
-
-@misc{full-stack-optimization-for-ml-accel,
-  title={An Open-Source ML-Based Full-Stack Optimization Framework for Machine Learning Accelerators}, 
-  author={Hadi Esmaeilzadeh and Soroush Ghodrati and Andrew B. Kahng and Joon Kyung Kim and Sean Kinzer and Sayak Kundu and Rohan Mahapatra and Susmita Dey Manasi and Sachin Sapatnekar and Zhiang Wang and Ziqing Zeng},
-  year={2023},
-  eprint={2308.12120},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG}
-}
-
-@inproceedings{physically-accurate,
-  author = {Esmaeilzadeh, Hadi and Ghodrati, Soroush and Kahng, Andrew B. and Kim, Joon Kyung and Kinzer, Sean and Kundu, Sayak and Mahapatra, Rohan and Manasi, Susmita Dey and Sapatnekar, Sachin S. and Wang, Zhiang and Zeng, Ziqing},
-  title = {Physically Accurate Learning-Based Performance Prediction of Hardware-Accelerated ML Algorithms},
-  year = {2022},
-  isbn = {9781450394864},
+@INPROCEEDINGS{dscs-serverless:asplos:2024,
+  title={In-Storage Domain-Specific Acceleration for Serverless Computing},
+  author={Rohan Mahapatra and Soroush Ghodrati and Byung Hoon Ahn and Sean Kinzer and Shu-ting Wang and Hanyang Xu and Lavanya Karthikeyan and Hardik Sharma and Amir Yazdanbakhsh and Mohammad Alian and Hadi Esmaeilzadeh},
+  booktitle={ASPLOS 2024: Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
+  year={2024},
   publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  url = {https://doi.org/10.1145/3551901.3556489},
-  doi = {10.1145/3551901.3556489},
-  abstract = {Parameterizable ML accelerators are the product of recent breakthroughs in machine learning (ML). To fully enable the design space exploration, we propose a physical-design-driven, learning-based prediction framework for hardware-accelerated deep neural network (DNN) and non-DNN ML algorithms. It employs a unified methodology, coupling backend power, performance and area (PPA) analysis with frontend performance simulation, thus achieving realistic estimation of both backend PPA and system metrics (runtime and energy). Experimental studies show that the approach provides excellent predictions for both ASIC (in a 12nm commercial process) and FPGA implementations on the VTA and VeriGOOD-ML platforms.},
-  booktitle = {Proceedings of the 2022 ACM/IEEE Workshop on Machine Learning for CAD},
-  pages = {119–126},
-  numpages = {8},
-  keywords = {PPA prediction, ML accelerator, design space exploration},
-  location = {Virtual Event, China},
-  series = {MLCAD '22}
+  location = {New York, NY, USA},
+  volume = {},
+  number = {},
+  pages = {},
+  location = {San Diego, CA, USA},
+  series = {ASPLOS 2024},
+  abstract = {While (I) serverless computing is emerging as a popular form of cloud execution, datacenters are going through major changes: (II) storage dissaggregation in the system infrastructure level and (III) integration of domain-specific accelerators in the hardware level. Each of these three trends individually provide significant benefits; however, when combined the benefits diminish. On the convergence of these trends, the paper makes the observation that for serverless functions, the overhead of accessing dissaggregated storage overshadows the gains from accelerators. Therefore, to benefit from all these trends in conjunction, we propose In-Storage Domain-Specific Acceleration for Serverless Computing (dubbed DSCS-Serverless1). The idea contributes a serverless model that utilizes a programmable accelerator embedded within computational storage to unlock the potential of acceleration in disaggregated datacenters. Our results with eight applications shows that integrating a comparatively small accelerator within the storage (DSCS-Serverless) that fits within its power constrains (25 Watts), significantly outperforms a traditional disaggregated system that utilizes NVIDIA RTX 2080 Ti GPU (250 Watts). Further, the work highlights that disaggregation, serverless model, and the limited power budget for computation in storage device require a different design than the conventional practices of integrating microprocessors and FPGAs. This insight is in contrast with current practices of designing computational storage devices that are yet to address the challenges associated with the shifts in datacenters. In comparison with two such conventional designs that use ARM cores or a Xilinx FPGA, DSCS-Serverless provides 3.7x and 1.7x end-to-end application speedup, 4.3x and 1.9x energy reduction, and 3.2x and 2.3x better cost efficiency, respectively.}
 }
 
-@inproceedings{verigood-ml,
-  author = {Esmaeilzadeh, Hadi and Ghodrati, Soroush and Gu, Jie and Guo, Shiyu and Kahng, Andrew B. and Kim, Joon Kyung and Kinzer, Sean and Mahapatra, Rohan and Manasi, Susmita Dey and Mascarenhas, Edwin and Sapatnekar, Sachin S. and Varadarajan, Ravi and Wang, Zhiang and Xu, Hanyang and Yatham, Brahmendra Reddy and Zeng, Ziqing},
-  title = {VeriGOOD-ML: An Open-Source Flow for Automated ML Hardware Synthesis},
-  year = {2021},
-  publisher = {IEEE Press},
-  url = {https://doi.org/10.1109/ICCAD51958.2021.9643449},
-  doi = {10.1109/ICCAD51958.2021.9643449},
-  abstract = {This paper introduces VeriGOOD-ML, an automated methodology for generating Verilog with no human in the loop, starting from a high-level description of a machine learning (ML) algorithm in a standard format such as ONNX. The Verilog RTL is then translated through a back-end design flow to GDSII, driven by a design planning approach that is well tailored to the macro-intensive nature of ML platforms. VeriGOOD-ML uses three approaches to build ML hardware: the TABLA platform uses a dataflow architecture that is well suited to non-DNN ML algorithms; the GeneSys platform, with a systolic array and a SIMD array, is optimized for implementing DNNs; and the Axiline approach synthesizes small ML algorithms by hardcoding the structure of the algorithm into hardware, thus trading off flexibility for performance and power. The overall approach explores the design space of platform configurations and Pareto-optimal-PPA back-end implementations to yield designs that represent different tradeoffs at the algorithmic level between area, power, performance, and execution time. The overall methodology, from architecture to back-end design to hardware implementation, is described in this paper, and the results of VeriGOOD-ML are demonstrated on a set of ML benchmarks.},
-  booktitle = {2021 IEEE/ACM International Conference On Computer Aided Design (ICCAD)},
-  pages = {1–7},
-  numpages = {7},
-  location = {Munich, Germany}
+@INPROCEEDINGS{tandem-processor:asplos:2024,
+  title={Tandem Processor: Grappling with Emerging Operators in Neural Networks}, 
+  author={Ghodrati, Soroush and Kinzer, Sean and Xu, Hanyang and Mahapatra, Rohan and Ahn, Byung Hoon and Wang, Dong Kai and Karthikeyan, Lavanya and Yazdanbakhsh, Amir and Park, Jongse and Kim, Nam Sung and Esmaeilzadeh, Hadi},
+  booktitle={ASPLOS 2024: Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems}, 
+  year={2024},
+  publisher = {Association for Computing Machinery},
+  location = {New York, NY, USA},
+  volume = {},
+  number = {},
+  pages = {},
+  location = {San Diego, CA, USA},
+  series = {ASPLOS 2024}
+}
+
+@misc{covenant:arxiv:2023,
+  title={Restoring the Broken Covenant Between Compilers and Deep Learning Accelerators}, 
+  author={Sean Kinzer and Soroush Ghodrati and Rohan Mahapatra and Byung Hoon Ahn and Edwin Mascarenhas and Xiaolong Li and Janarbek Matai and Liang Zhang and Hadi Esmaeilzadeh},
+  year={2023},
+  arxiv={2310.17912},
 }
