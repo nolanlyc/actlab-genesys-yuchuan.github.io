@@ -17,7 +17,7 @@ These interfaces are fully programmable through the instruction set architecture
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/system_arch.jpg" class="img-fluid rounded z-depth-1" width="80%" %}
+        {% include figure.html path="assets/img/system_arch.jpg" class="img-fluid rounded z-depth-1" width="80%" center=true %}
     </div>
 </div>
 <div class="caption">
@@ -36,7 +36,7 @@ Finally, the outputs are stored in OBUFF which is a shared sctrachpad that Tande
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/systolic_array.jpg" class="img-fluid rounded z-depth-1" width="80%" %}
+        {% include figure.html path="assets/img/systolic_array.jpg" class="img-fluid rounded z-depth-1" width="80%" center=true %}
     </div>
 </div>
 <div class="caption">
@@ -53,7 +53,7 @@ It achieves these goal by the following microarchitecture designs.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/tandem_pipeline.jpg" class="img-fluid rounded z-depth-1" width="80%" %}
+        {% include figure.html path="assets/img/tandem_pipeline.jpg" class="img-fluid rounded z-depth-1" width="80%" center=true %}
     </div>
 </div>
 <div class="caption">
@@ -111,7 +111,7 @@ The ISA is consist of the serval class which is discribed in detail below.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/isa.jpg" class="img-fluid rounded z-depth-1" width="80%" %}
+        {% include figure.html path="assets/img/isa.jpg" class="img-fluid rounded z-depth-1" width="80%" center=true %}
     </div>
 </div>
 <div class="caption">
