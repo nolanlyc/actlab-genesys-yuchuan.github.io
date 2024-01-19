@@ -5,8 +5,8 @@ permalink: /
 subtitle: 
 
 profile:
-  align: right
-  image: genesys-logo.jpg
+  align: true
+  image: genesys_workflow.jpg
   image_circular: false # crops the image to make it circular
   more_info:
 
@@ -16,14 +16,15 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-<div class="row mt-3">
+<!-- REMOVE IMAGE FROM BODY AND PLACE CENTERED AT HEAD INSTEAD -->
+<!-- <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/genesys_workflow.jpg" class="img-fluid rounded z-depth-1" center=true %}
     </div>
 </div>
 <div class="caption">
     An overview of the GeneSys workflow.
-</div>
+</div> -->
 
 _GeneSys_ is an innovative solution designed to seamlessly integrate accelerators into the software infrastructure, offering a holistic approach to system design. 
 It is specifically engineered to produce complete acceleration systems for emerging deep learning models with minimal human intervention. 
