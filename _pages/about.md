@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: center
-  image: genesys_workflow.jpg
+  image: 
   image_circular: false # crops the image to make it circular
   more_info:
 
@@ -20,6 +20,15 @@ _GeneSys_ is an innovative solution designed to seamlessly integrate accelerator
 It is specifically engineered to produce complete acceleration systems for emerging deep learning models with minimal human intervention. 
 _GeneSys_ marks a significant advancement in the realm of open-source deep learning hardware, presenting an all-in-one solution for the efficient generation of deep learning accelerators, complete with a cutting-edge compiler and user-friendly APIs.
 Next, we briefly list the key features of _GeneSys_.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/genesys_workflow.jpg" class="img-fluid rounded z-depth-1" width="80%" center=true %}
+    </div>
+</div>
+<div class="caption">
+    Overview of GeneSys workflow.
+</div>
 
 **Comprehensive Solution:** _GeneSys_ offers an end-to-end compilation stack, a parameterizable DNN accelerator generator, RTL verification testbenches and regression suite with synthetic and state-of-the-art DNN benchmarks (including transformers like BERT and GPT2), FPGA implementation framework, OpenCL-compliant Linux drivers, and a software simulator for quick profiling and insights.
 
