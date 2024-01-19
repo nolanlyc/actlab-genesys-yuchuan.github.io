@@ -25,13 +25,19 @@ Researchers and developers interested in deep learning systems, compiler develop
 - **Registration:** To secure your spot for our tutorial, please sign up for at least a "One-Day Workshop/Tutorial" with October 29, 2023 as your preferred date of attendance. You can register [here](https://microarch.org/micro56/attend/register.php).
 
 # Schedule
+| Left aligned | Center aligned | Right aligned |
+| :----------- | :------------: | ------------: |
+| Left 1       |    center 1    |       right 1 |
+| Left 2       |    center 2    |       right 2 |
+| Left 3       |    center 3    |       right 3 |
+
 | Start (EST) | End (EST) | Agenda | Presenter | Resources |
 | :---------: | :-------: | :----- | :-------: | :-------: | 
 | **1:00 PM** | **1:30 PM** | **Introduction** | Hadi | [slides](https://drive.google.com/file/d/1E8Nxq5RPDpJ-WdlaAwh6_UkjYBydnXuk/view?usp=sharing) |
-| | | DNNs, LLMs, and hardware acceleration |
-| | | Need for open-source toolchain
-| | | GeneSys overview
-| | | Potential use cases
+| | | DNNs, LLMs, and hardware acceleration | | |
+| | | Need for open-source toolchain | | |
+| | | GeneSys overview | | |
+| | | Potential use cases | | |
 
 <!-- | **1:30 PM** | **1:50 PM** | **_GeneSys_ Architecture** | Rohan | [slides](https://drive.google.com/file/d/1HPd8SXfWXGB0kghUW_ZJxC5kvaqaShP8/view?usp=sharing) | 
 | | | Systolic array | | |
