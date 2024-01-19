@@ -17,15 +17,15 @@ These interfaces are fully programmable through the instruction set architecture
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/system_arch.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/system_arch.jpg" class="img-fluid rounded z-depth-1" width="80%" %}
     </div>
 </div>
 <div class="caption">
     GeneSys system architecture.
 </div>
 
-## Systolic Array
-We implemented an systolic array to handel GEMM operations.
+# Systolic Array
+We implemented an systolic array to handle GEMM operations.
 The systolic array has been the de facto standard architecture for GEMM operation in both academia and industry.
 A systoic array consists of a 2D array of Processing Elements (PE) to perform matrix multiplications and convolution.
 Input activations are stored on-chip in the IBUFF implemented as a multi-bank scratchpad, where each bank is shared across PEs within a row.
@@ -36,14 +36,14 @@ Finally, the outputs are stored in OBUFF which is a shared sctrachpad that Tande
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/systolic_array.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/systolic_array.jpg" class="img-fluid rounded z-depth-1" width="80%" %}
     </div>
 </div>
 <div class="caption">
     GeneSys systolic array.
 </div>
 
-## Tandem Processor
+# Tandem Processor
 The design of Tandem Processor aims to achieve the following goals.
 1) In-tandem execution of GEMMs and non-GEMMs.
 2) Balanced efficiency and programmability for the non-GEMM unit.
@@ -53,7 +53,7 @@ It achieves these goal by the following microarchitecture designs.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/tandem_pipeline.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/tandem_pipeline.jpg" class="img-fluid rounded z-depth-1" width="80%" %}
     </div>
 </div>
 <div class="caption">
@@ -111,65 +111,65 @@ The ISA is consist of the serval class which is discribed in detail below.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/isa.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/isa.jpg" class="img-fluid rounded z-depth-1" width="80%" %}
     </div>
 </div>
 <div class="caption">
     GeneSys ISA.
 </div>
 
-## Tandem Processor ISA
+### Tandem Processor ISA
 
-### Configuration Instructions
+#### Configuration Instructions
 This class includes two opcodes.
 The ITERATOR_CONFIG opcode is used with three functions (func bits): (1) BASE_ADDR to fill the Iterator Tables with the base addresses for the scratchpads, (2) STRIDE to fill the Iterator Tables with strides for the scratchpad address calculation, and (3) IMM BUF to fill the immediate buffer with the immediate values needed for non-GEMM operations.
 The ns id and iter idx fields identify the target namespace and the index to its corresponding Iterator Table. 
 Also, this instruction is used to set the immediate values in IMM BUF. Another opcode is DATATYPE_CONFIG, which is used for datatype casting.
 
-### Compute Instructions
+#### Compute Instructions
 Opcode ALU is defined with various func bits to support Add, Sub, Mul, MACC, Div, Max, Min, Shift, Not, AND, OR operations on src1 and/or src2 operands. 
 Additionally, this opcode supports MOVE/COND_MOVE instructions for scatter/gather operations. 
 Opcode CALCULUS consists of mathematical operations such as absolute value and sign. 
 Opcode COMPARISON supports logical comparisons. 
 The operands (src1/src2/dst) for each instruction are specified by using a 3-bit ns id to locate the buffer, and a 5-bit iter idx corresponding to the stride and offset.
 
-### Loop Instructions
+#### Loop Instructions
 This class is used with the LOOP opcode to configure the Code Repeater. 
 This opcode is used with SET_ITER function bits to specify the iterations for each loop identified by loop id. 
 The SET_NUM_INST function is used to identify the number of instructions in the loop body. 
 To cope with the customized on-chip memory accesses for each loop dimension, the SET_INDEX function is used, while the rest of the instruction bits are used to set the associated ⟨ns ID, iter idx⟩ for the three operands (similar to compute instructions).
 The loop instructions are designed to support arbitrary levels of nesting (up to eight, each of which is identified by loop id field) needed by non-GEMM operators.
 
-### Data Transformation Instructions
+#### Data Transformation Instructions
 This class is used with two opcodes: (1) PERMUTE for permuting multi-dimensional tensors using the Permute Engine. (2) DATATYPE_CAST for datatype casting.
 For PERMUTE opcode, SET_BASE_ADDR, SET_LOOP_ITER, and SET_LOOP_STRIDE functions configure the base addresses, shapes, and strides, respectively, for both the source and destination’s tensor dimensions (identified by dim idx).
 Then, with the START function, the iterators start generating the address for the source and destination according to the desired permutation. 
 Additionally, the LSB bit of the Immediate field while using the START function identifies if this permutation operation requires shuffling the data across the SIMD lanes/scratchpad banks or not. 
 DATATYPE_CAST opcode is used to cast tensor elements to various fixed-point representations such as FXP32, FXP16, FXP8, and FXP4 needed by the GEMM unit.
 
-### Off-Chip Data Movement Instructions
+#### Off-Chip Data Movement Instructions
 TILE_LD_ST opcode describes the data tile transfer between off-chip memory and Interim BUFs.
 The func1 field includes various fucntions: The LD/ST_CONFIG_BASE_ADDR function is used to generate the base addresses of each tile, then the shape and strides are configured using the LD/ST_CONFIG_BASE_LOOP_ITER/STRIDE functions.
 Also, LD/ST_CONFIG_TILE_LOOP_ITER/STRIDE functions are used to configure the Data Access Engine to generate the addresses required for each tile.
 Finally, LD/ST_START function triggers the Data Access Engine to start populating/draining the intermediate buffers. 
 The func2 field is used to identify the target buffer between Interim BUF 1&2.
 
-## Systolic Array ISA
+### Systolic Array ISA
 
-### Compute Loop Instructions and LD/ST Loop Instructions
+#### Compute Loop Instructions and LD/ST Loop Instructions
 This class is used with the SA_LOOP opcode to configure the Code Repeater on the systolic array.
 It consists of xx opcodes.
 SA_LOOP specifies the iterations for each loop identified by loop id. SET_LOOP_STRIDE and SET_LOOP_ADDR works together to set the the base addresses for the scratchpads and STRIDE to fill the Iterator Tables with strides for the scratchpad address calculation.
 The mechnism is identical to the Tandem Processor Configrueation and Loop instruction.
 The LD/ST Loop instruction shares the same LOOP structure with the compute loop.
 
-### Off-Chip Data Movement Instructions
+#### Off-Chip Data Movement Instructions
 LD_ST insturction specify the request size of each LD/ST instruction.
 The LD/ST Loop instruction shares the same LOOP iteration structure with the compute loop.
 
-## Shared Instructions
+### Shared Instructions
 
-### Synchronization Instructions
+#### Synchronization Instructions
 The func bits are defined as ⟨GEMM/SIMD,START/END,EXEC/BUF,X⟩.
 The START/END along with EXEC bit identifies the regions of instructions that belong to Tandem Processor and GEMM Unit (identified with GEMM/SIMD bit accordingly), which helps dispatch instructions to the appropriate unit.
 Also, this instruction can be used with EXEC bit to notify the GEMM Unit that the execution of non-GEMM operations of the running tile is completed, or with BUF bit to notify GEMM Unit that the OUTPUT BUF is released and ready for the subsequent tile.
