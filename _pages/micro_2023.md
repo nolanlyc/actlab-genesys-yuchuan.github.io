@@ -25,11 +25,6 @@ Researchers and developers interested in deep learning systems, compiler develop
 - **Registration:** To secure your spot for our tutorial, please sign up for at least a "One-Day Workshop/Tutorial" with October 29, 2023 as your preferred date of attendance. You can register [here](https://microarch.org/micro56/attend/register.php).
 
 # Schedule
-| Left aligned | Center aligned | Right aligned |
-| :----------- | :------------: | ------------: |
-| Left 1       |    center 1    |       right 1 |
-| Left 2       |    center 2    |       right 2 |
-| Left 3       |    center 3    |       right 3 |
 
 | Start (EST) | End (EST) | Agenda | Presenter | Resources |
 | :---------: | :-------: | :----- | :-------: | :-------: | 
@@ -38,8 +33,7 @@ Researchers and developers interested in deep learning systems, compiler develop
 | | | Need for open-source toolchain | | |
 | | | GeneSys overview | | |
 | | | Potential use cases | | |
-
-<!-- | **1:30 PM** | **1:50 PM** | **_GeneSys_ Architecture** | Rohan | [slides](https://drive.google.com/file/d/1HPd8SXfWXGB0kghUW_ZJxC5kvaqaShP8/view?usp=sharing) | 
+| **1:30 PM** | **1:50 PM** | **_GeneSys_ Architecture** | Rohan | [slides](https://drive.google.com/file/d/1HPd8SXfWXGB0kghUW_ZJxC5kvaqaShP8/view?usp=sharing) | 
 | | | Systolic array | | |
 | | | SIMD array | | |
 | | | On-chip memory architecture and memory interface | | |
@@ -68,7 +62,7 @@ Researchers and developers interested in deep learning systems, compiler develop
 | **4:30 PM** | **5:00 PM** | **Performance Profiling on _GeneSys_** | Hanyang | [slides](https://drive.google.com/file/d/1oy48z4ujWjmKxZUqDCITaBrHKVBUpoFy/view?usp=sharing) |
 | | | *Interactive Activity*: Running BERT transformer block with different tiling, loop order, on-chip buffers, fusing layers | | |
 | | | *Interactive Activity*: Analyzing logs | | |
-| | | *Interactive Activity*: Using performance counters to investigate layer | | | -->
+| | | *Interactive Activity*: Using performance counters to investigate layer | | |
 
 <!-- OLD BULLET-LIST SCHEDULE -->
 <!-- - **Introduction** ([slides](https://drive.google.com/file/d/1E8Nxq5RPDpJ-WdlaAwh6_UkjYBydnXuk/view?usp=sharing))
