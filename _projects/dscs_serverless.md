@@ -14,7 +14,7 @@ related_publications: dscs-serverless:asplos:2024
     </div>
 </div>
 <div class="caption">
-    This project devises *DSCS-Serverless* at the conjunction of three different trends in datacenters: (1) serverless computing in the programming level; (2) storage disaggregation in the system infrastructure level; and (3) domain-specific accelerators in the hardware level.
+    This project devises DSCS-Serverless at the conjunction of three different trends in datacenters: (1) serverless computing in the programming level; (2) storage disaggregation in the system infrastructure level; and (3) domain-specific accelerators in the hardware level.
 </div>
 
 # Problem

@@ -3,7 +3,7 @@ layout: page
 title: Data Motion Acceleration
 description: 
 img: assets/img/dmx_proposed.jpg
-importance: 1
+importance: 2
 category: architecture
 related_publications: dmx:hpca:2024
 ---
