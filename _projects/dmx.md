@@ -5,7 +5,7 @@ description:
 img: assets/img/dmx_proposed.jpg
 importance: 1
 category: architecture
-related_publications:
+related_publications: dmx:hpca:2024
 ---
 
 <div class="row">
@@ -27,5 +27,5 @@ The sole focus on this single domain is sub-optimal as it misses the potential t
 However, there is a catch as the data motion overhead can outweigh the benefits from all these chained heterogeneous accelerators.
 We dub the data restructuring and communication overhead of executing a single application using a chain of accelerators as the data motion overhead.  
 In a stark contrast with most works on DSAs that deal with accelerating compute kernels, this work focuses on accelerating data motion within a chain of heterogeneous DSAs in a multi-accelerator datacenter.
-To that end, this paper introduces *Data Motion Acceleration* (DMX) for (1) reducing data movement, (2) accelerating data restructuring, and (3) enabling interoperability between heterogeneous accelerators from different domains through a cross-stack hardware-software solution. 
-The results with five end-to-end applications show that utilizing DMX offers up to 8.2×, 13.6×, and 5.2×improvement in latency, throughput, and energy efficiency in a multi-accelerator system, respectively.
+To that end, this project introduces *Data Motion Acceleration* (DMX) for (1) reducing data movement, (2) accelerating data restructuring, and (3) enabling interoperability between heterogeneous accelerators from different domains through a cross-stack hardware-software solution. 
+The results with five end-to-end applications show that utilizing DMX offers up to 8.2x, 13.6x, and 5.2x improvement in latency, throughput, and energy efficiency in a multi-accelerator system, respectively.
