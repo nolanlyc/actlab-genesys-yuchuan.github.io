@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our tutorial was accepted for presentation at the _51st Annual International Symposium on Computer Architecture_ (ISCA 2024).
+Our tutorial was accepted for presentation at the _51st Annual International Symposium on Computer Architecture_ (ISCA 2024) in Buenos Aires, Argentina.

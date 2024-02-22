@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our tutorial was accepted for presentation at the _29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems_ (ASPLOS 2024).
+Our tutorial was accepted for presentation at the _29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems_ (ASPLOS 2024) in San Diego, CA, USA.
