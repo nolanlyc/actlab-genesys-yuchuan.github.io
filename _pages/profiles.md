@@ -1,12 +1,3 @@
-<!-- ---
-layout: page
-permalink: /people/
-title: people
-description: contributors to GeneSys
-nav: true
-nav_order: 8
---- -->
-
 ---
 layout: profiles
 permalink: /people/
