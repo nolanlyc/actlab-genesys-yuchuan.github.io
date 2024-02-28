@@ -29,12 +29,14 @@ Researchers and developers interested in deep learning systems, compiler develop
 | Start (EST) | End (EST) | Agenda | Presenter | Resources |
 | :---------: | :-------: | :----- | :-------: | :-------: | 
 | **1:00 PM** | **1:30 PM** | **Introduction** | Hadi | [slides](https://drive.google.com/file/d/1E8Nxq5RPDpJ-WdlaAwh6_UkjYBydnXuk/view?usp=sharing) |
-| | | DNNs, LLMs, and hardware acceleration <br> Need for open-source toolchain | | [video](https://youtu.be/8yxQDh4l_4M) |
-| | | GeneSys overview <br> Potential use cases | | [video](https://youtu.be/SjjT7Vpl14s) |
+| | | DNNs, LLMs, and hardware acceleration | | [video](https://youtu.be/8yxQDh4l_4M) |
+| | | Need for open-source toolchain | | " |
+| | | GeneSys overview | | [video](https://youtu.be/SjjT7Vpl14s) |
+| | | Potential use cases | | " |
 | **1:30 PM** | **1:50 PM** | **_GeneSys_ Architecture** | Rohan | [slides](https://drive.google.com/file/d/1HPd8SXfWXGB0kghUW_ZJxC5kvaqaShP8/view?usp=sharing) | 
 | | | Systolic array | | [video](https://youtu.be/ZcIiuOYtepo) |
-| | | SIMD array | | |
-| | | On-chip memory architecture and memory interface | | |
+| | | SIMD array | | " |
+| | | On-chip memory architecture and memory interface | | " |
 <!-- Not in the slides or video! -->
 <!-- | | | ISA | | | -->
 | | | Tiled execution | | [video](https://youtu.be/0BbQONPVFyE) |
@@ -52,7 +54,7 @@ Researchers and developers interested in deep learning systems, compiler develop
 | | | *Interactive Activity:* Compiling ResNet50, changing tiling, loop order, on-chip buffers, fusing layers | | |
 | | | *Interactive Activity:* Compiling BERT | | | 
 | | | Adding a new layer | | [video](https://youtu.be/zTAlpBVifVM) |
-| | | Compiling to a new target architecture | | |
+| | | Compiling to a new target architecture | | " |
 | **4:00 PM** | **4:30 PM** | **Runtime and Drivers** | Hanyang | [slides](https://drive.google.com/file/d/1Tc3jDQUbMBjJZesZvIcJi_C9XLjTPJIR/view?usp=sharing) |
 | | | Overview | | |
 | | | APIs | | |
