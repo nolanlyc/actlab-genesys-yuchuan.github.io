@@ -40,6 +40,8 @@ Researchers and developers interested in deep learning systems, compiler develop
 <!-- Not in the slides or video! -->
 <!-- | | | ISA | | | -->
 | | | Tiled execution | | [video](https://youtu.be/0BbQONPVFyE) |
+
+
 | **1:50 PM** | **2:30 PM** | **_GeneSys_ Verification** | Lavanya | [slides](https://drive.google.com/file/d/1xCwBLS6qwOU3qSmTj65pPdOrC9lPvhEE/view?usp=sharing) |
 | | | RTL simulation | | |
 | | | Hardware emulation | | |
