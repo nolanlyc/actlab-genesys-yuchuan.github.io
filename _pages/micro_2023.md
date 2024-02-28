@@ -37,7 +37,7 @@ Researchers and developers interested in deep learning systems, compiler develop
 | | | Systolic array | | [video](https://youtu.be/ZcIiuOYtepo) |
 | | | SIMD array | | |
 | | | On-chip memory architecture and memory interface | | |
-| | | Tiled execution | | [video](https://youtu.be/0BbQONPVFyE) |
+| | | Tiled execution <br /> test | | [video](https://youtu.be/0BbQONPVFyE) |
 | **1:50 PM** | **2:30 PM** | **_GeneSys_ Verification** | Lavanya | [slides](https://drive.google.com/file/d/1xCwBLS6qwOU3qSmTj65pPdOrC9lPvhEE/view?usp=sharing) |
 | | | RTL simulation | | |
 | | | Hardware emulation | | |
