@@ -29,30 +29,29 @@ Researchers and developers interested in deep learning systems, compiler develop
 | Start (EST) | End (EST) | Agenda | Presenter | Resources |
 | :---------: | :-------: | :----- | :-------: | :-------: | 
 | **1:00 PM** | **1:30 PM** | **Introduction** | Hadi | [slides](https://drive.google.com/file/d/1E8Nxq5RPDpJ-WdlaAwh6_UkjYBydnXuk/view?usp=sharing) |
-| | | DNNs, LLMs, and hardware acceleration | | |
-| | | Need for open-source toolchain | | |
-| | | GeneSys overview | | |
-| | | Potential use cases | | |
+| | | DNNs, LLMs, and hardware acceleration <br> Need for open-source toolchain | | [video](https://youtu.be/8yxQDh4l_4M) |
+| | | GeneSys overview <br> Potential use cases | | [video](https://youtu.be/SjjT7Vpl14s) |
 | **1:30 PM** | **1:50 PM** | **_GeneSys_ Architecture** | Rohan | [slides](https://drive.google.com/file/d/1HPd8SXfWXGB0kghUW_ZJxC5kvaqaShP8/view?usp=sharing) | 
-| | | Systolic array | | |
+| | | Systolic array | | [video](https://youtu.be/ZcIiuOYtepo) |
 | | | SIMD array | | |
 | | | On-chip memory architecture and memory interface | | |
-| | | ISA | | |
-| | | Tiled execution | | |
+<!-- Not in the slides or video! -->
+<!-- | | | ISA | | | -->
+| | | Tiled execution | | [video](https://youtu.be/0BbQONPVFyE) |
 | **1:50 PM** | **2:30 PM** | **_GeneSys_ Verification** | Lavanya | [slides](https://drive.google.com/file/d/1xCwBLS6qwOU3qSmTj65pPdOrC9lPvhEE/view?usp=sharing) |
 | | | RTL simulation | | |
 | | | Hardware emulation | | |
 | | | FPGA implementation and synthesis | | |
 | | | Python driver | | |
-| | | *Interactive Activity*: Configuring GeneSys 16x16; observe it is 16x16; run a single layer | | |
-| | | *Interactive Activity*: Configuring GeneSys 4x4; observe it is 4x4; run same layer | | |
-| | | *Demo*: FPGA | | |
-| **2:30 PM** | **4:00 PM** | **Covenant Compiler and Programming Model** | Chris | [slides](https://drive.google.com/file/d/1HM5_2ne8TZROW2Uq0JsTb31fPGdWd85b/view?usp=sharing) |
-| | | Compiler overview | | |
+| | | *Interactive Activity:* Configuring GeneSys 16x16; observe it is 16x16; run a single layer | | |
+| | | *Interactive Activity:* Configuring GeneSys 4x4; observe it is 4x4; run same layer | | |
+| | | *Demo:* FPGA | | |
+| **2:30 PM** | **4:00 PM** | **Compiler and Programming Model** | Chris | [slides](https://drive.google.com/file/d/1HM5_2ne8TZROW2Uq0JsTb31fPGdWd85b/view?usp=sharing) |
+| | | Compiler overview | | [video](https://youtu.be/3mQ5tgiq1BM) |
 | 3:00 PM | 3:30 PM | *Coffee break* | | |
-| | | *Interactive Activity*: Compiling ResNet50, changing tiling, loop order, on-chip buffers, fusing layers | | |
-| | | *Interactive Activity*: Compiling BERT | | | 
-| | | Adding a new layer | | |
+| | | *Interactive Activity:* Compiling ResNet50, changing tiling, loop order, on-chip buffers, fusing layers | | |
+| | | *Interactive Activity:* Compiling BERT | | | 
+| | | Adding a new layer | | [video](https://youtu.be/zTAlpBVifVM) |
 | | | Compiling to a new target architecture | | |
 | **4:00 PM** | **4:30 PM** | **Runtime and Drivers** | Hanyang | [slides](https://drive.google.com/file/d/1Tc3jDQUbMBjJZesZvIcJi_C9XLjTPJIR/view?usp=sharing) |
 | | | Overview | | |
@@ -60,9 +59,9 @@ Researchers and developers interested in deep learning systems, compiler develop
 | | | OpenCL runtime | | |
 | | | Example use cases | | |
 | **4:30 PM** | **5:00 PM** | **Performance Profiling on _GeneSys_** | Hanyang | [slides](https://drive.google.com/file/d/1oy48z4ujWjmKxZUqDCITaBrHKVBUpoFy/view?usp=sharing) |
-| | | *Interactive Activity*: Running BERT transformer block with different tiling, loop order, on-chip buffers, fusing layers | | |
-| | | *Interactive Activity*: Analyzing logs | | |
-| | | *Interactive Activity*: Using performance counters to investigate layer | | |
+| | | *Interactive Activity:* Running BERT transformer block with different tiling, loop order, on-chip buffers, fusing layers | | |
+| | | *Interactive Activity:* Analyzing logs | | |
+| | | *Interactive Activity:* Using performance counters to investigate layer | | |
 
 <!-- OLD BULLET-LIST SCHEDULE -->
 <!-- - **Introduction** ([slides](https://drive.google.com/file/d/1E8Nxq5RPDpJ-WdlaAwh6_UkjYBydnXuk/view?usp=sharing))
