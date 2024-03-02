@@ -30,7 +30,7 @@ Researchers and developers interested in deep learning systems, compiler develop
 | :---------: | :-------: | :----- | :-------: | :-------: | 
 | **1:00 PM** | **1:30 PM** | **Introduction** | Hadi | [slides](https://drive.google.com/file/d/1E8Nxq5RPDpJ-WdlaAwh6_UkjYBydnXuk/view?usp=sharing) |
 | | | DNNs, LLMs, and hardware acceleration <br /> Need for open-source toolchain | | [video](https://youtu.be/8yxQDh4l_4M) |
-| | | GeneSys overview <br /> Potential use cases | | [video](https://youtu.be/SjjT7Vpl14s) |
+| | | System overview <br /> Potential use cases | | [video](https://youtu.be/SjjT7Vpl14s) |
 | **1:30 PM** | **1:50 PM** | **_GeneSys_ Architecture** | Rohan | [slides](https://drive.google.com/file/d/1HPd8SXfWXGB0kghUW_ZJxC5kvaqaShP8/view?usp=sharing) | 
 | | | Systolic array <br /> SIMD array <br /> On-chip memory architecture and memory interface | | [video](https://youtu.be/ZcIiuOYtepo) |
 | | | Tiled execution | | [video](https://youtu.be/0BbQONPVFyE) |
@@ -48,12 +48,10 @@ Researchers and developers interested in deep learning systems, compiler develop
 | | | *Interactive Activity:* Compiling ResNet50, changing tiling, loop order, on-chip buffers, fusing layers | | |
 | | | *Interactive Activity:* Compiling BERT | | | 
 | | | Adding a new layer <br /> Compiling to a new target architecture | | [video](https://youtu.be/zTAlpBVifVM) |
-| **4:00 PM** | **4:30 PM** | **Runtime and Drivers** | Hanyang | [slides](https://drive.google.com/file/d/1Tc3jDQUbMBjJZesZvIcJi_C9XLjTPJIR/view?usp=sharing) |
-| | | Overview | | |
-| | | APIs | | |
-| | | OpenCL runtime | | |
-| | | Example use cases | | |
-| **4:30 PM** | **5:00 PM** | **Performance Profiling on _GeneSys_** | Hanyang | [slides](https://drive.google.com/file/d/1oy48z4ujWjmKxZUqDCITaBrHKVBUpoFy/view?usp=sharing) |
+| **4:00 PM** | **4:30 PM** | **Runtime and Drivers** | Hanyang | [slides](https://drive.google.com/file/d/1vGao8z4ldizZFSbCAKdivTYBW-8B11Mx/view?usp=sharingg) |
+| | | Example problem: data motion acceleration <br /> Example problem: neuromodulation for brain-implantable devices <br /> Challenges and opportunities with a unified runtime <br /> Python APIs | | [video](https://youtu.be/xrTq9a1J0e0) |
+| **4:30 PM** | **5:00 PM** | **Performance Profiling on _GeneSys_** | Hanyang | [slides](https://drive.google.com/file/d/1VMBX_APRTnXl3yQVVrjLJCC9vBjs_3rq/view?usp=sharing) |
+| | | Software simulator <br /> Performance profiling with software simulator | | [video](https://youtu.be/9jXDxx16Oac) |
 | | | *Interactive Activity:* Running BERT transformer block with different tiling, loop order, on-chip buffers, fusing layers | | |
 | | | *Interactive Activity:* Analyzing logs | | |
 | | | *Interactive Activity:* Using performance counters to investigate layer | | |
