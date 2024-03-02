@@ -52,9 +52,10 @@ Researchers and developers interested in deep learning systems, compiler develop
 | | | Example problem: data motion acceleration <br /> Example problem: neuromodulation for brain-implantable devices <br /> Challenges and opportunities with a unified runtime <br /> Python APIs | | [video](https://youtu.be/xrTq9a1J0e0) |
 | **4:30 PM** | **5:00 PM** | **Performance Profiling on _GeneSys_** | Hanyang | [slides](https://drive.google.com/file/d/1VMBX_APRTnXl3yQVVrjLJCC9vBjs_3rq/view?usp=sharing) |
 | | | Software simulator <br /> Performance profiling with software simulator | | [video](https://youtu.be/9jXDxx16Oac) |
-| | | *Interactive Activity:* Running BERT transformer block with different tiling, loop order, on-chip buffers, fusing layers | | |
+
+<!-- | | | *Interactive Activity:* Running BERT transformer block with different tiling, loop order, on-chip buffers, fusing layers | | |
 | | | *Interactive Activity:* Analyzing logs | | |
-| | | *Interactive Activity:* Using performance counters to investigate layer | | |
+| | | *Interactive Activity:* Using performance counters to investigate layer | | | -->
 
 <!-- OLD BULLET-LIST SCHEDULE -->
 <!-- - **Introduction** ([slides](https://drive.google.com/file/d/1E8Nxq5RPDpJ-WdlaAwh6_UkjYBydnXuk/view?usp=sharing))
