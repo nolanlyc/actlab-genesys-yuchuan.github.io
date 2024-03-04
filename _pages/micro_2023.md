@@ -45,8 +45,8 @@ Researchers and developers interested in deep learning systems, compiler develop
 | **2:30 PM** | **4:00 PM** | **Compiler and Programming Model** | Chris | [slides](https://drive.google.com/file/d/1HM5_2ne8TZROW2Uq0JsTb31fPGdWd85b/view?usp=sharing) |
 | | | Compiler overview | | [video](https://youtu.be/3mQ5tgiq1BM) |
 | 3:00 PM | 3:30 PM | *Coffee break* | | |
-| | | *Interactive Activity:* Compiling ResNet50, changing tiling, loop order, on-chip buffers, fusing layers | | |
-| | | *Interactive Activity:* Compiling BERT | | | 
+| | | *Interactive Activity:* Compiling ResNet50, changing tiling, loop order, on-chip buffers, fusing layers | | video coming soon... |
+| | | *Interactive Activity:* Compiling BERT | | video coming soon... | 
 | | | Adding a new layer <br /> Compiling to a new target architecture | | [video](https://youtu.be/zTAlpBVifVM) |
 | **4:00 PM** | **4:30 PM** | **Runtime and Drivers** | Hanyang | [slides](https://drive.google.com/file/d/1vGao8z4ldizZFSbCAKdivTYBW-8B11Mx/view?usp=sharingg) |
 | | | Example problem: data motion acceleration <br /> Example problem: neuromodulation for brain-implantable devices <br /> Challenges and opportunities with a unified runtime <br /> Python APIs | | [video](https://youtu.be/xrTq9a1J0e0) |
