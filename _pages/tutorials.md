@@ -5,6 +5,8 @@ nav: true
 nav_order: 4
 dropdown: true
 children:
+  - title: ISCA 2024
+    permalink: /tutorials/isca_2024
   - title: ASPLOS 2024
     permalink: /tutorials/asplos_2024
   - title: divider
