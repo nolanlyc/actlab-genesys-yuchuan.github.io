@@ -7,6 +7,7 @@ dropdown: true
 children:
   - title: ISCA 2024
     permalink: /tutorials/isca_2024
+  - title: divider
   - title: ASPLOS 2024
     permalink: /tutorials/asplos_2024
   - title: divider
