@@ -26,9 +26,22 @@ Researchers and developers interested in deep learning systems, compiler develop
 
 # Schedule
 
-Coming soon...
+| Start (EST) | End (EST) | Agenda | Presenter | Resources |
+| :---------: | :-------: | :----- | :-------: | :-------: | 
+| **1:30 PM** | **1:50 PM** | **Introduction** | Hadi |  |
+| | | History and challenges of hardware acceleration | | |
+| | | Introduction to _GeneSys_ | | |
+| | | _GeneSys_ for research | | |
+| | | _GeneSys_ for teaching | | |
+| **1:50 PM** | **2:20 PM** | **Motivation** | Rohan | |
+| **2:20 PM** | **3:00 PM** | **_GeneSys_ Architecture** | Hanyang | | 
+| **3:00 PM** | **3:30 PM** | **_GeneSys_ Verification** | Hanyang | |
+| **4:00 PM** | **5:00 PM** | **_GeneSys_ Compiler** | Chris | |
+| **5:00 PM** | **5:15 PM** | **Runtime and Drivers** | Hanyang | |
+| **5:15 PM** | **5:30 PM** | **_GeneSys_ Software Simulator** | Hanyang | |
 
 # Presenters
 - **Hadi Esmaeilzadeh**: Halicioğlu Chair in computer architecture and professor at the University of California, San Diego
 - **Rohan Mahapatra**: Ph.D. student in computer science and engineering at the University of California, San Diego
+- **Hanyang Xu**: Ph.D. student in computer science and engineering at the University of California, San Diego
 - **Christopher Priebe**: Ph.D. student in computer science and engineering at the University of California, San Diego
