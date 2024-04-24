@@ -13,16 +13,18 @@ Please use the following BibTeX entry to cite GeneSys.
 
 ```
 @INPROCEEDINGS{tandem-processor:asplos:2024,
-  author={Ghodrati, Soroush and Kinzer, Sean and Xu, Hanyang and Mahapatra, Rohan and Ahn, Byung Hoon and Wang, Dong Kai and Karthikeyan, Lavanya and Yazdanbakhsh, Amir and Park, Jongse and Kim, Nam Sung and Esmaeilzadeh, Hadi},
-  booktitle={ASPLOS 2024: Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems}, 
-  title={Tandem Processor: Grappling with Emerging Operators in Neural Networks}, 
-  year={2024},
+  author = {Ghodrati, Soroush and Kinzer, Sean and Xu, Hanyang and Mahapatra, Rohan and Kim, Yoonsung and Ahn, Byung Hoon and Wang, Dong Kai and Karthikeyan, Lavanya and Yazdanbakhsh, Amir and Park, Jongse and Kim, Nam Sung and Esmaeilzadeh, Hadi},
+  title = {Tandem Processor: Grappling with Emerging Operators in Neural Networks},
+  booktitle = {Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+  year = {2024},
+  isbn = {9798400703850},
   publisher = {Association for Computing Machinery},
-  volume = {},
-  number = {},
-  pages = {},
-  location = {San Diego, CA, USA},
-  series = {ASPLOS 2024}
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3620665.3640365},
+  doi = {10.1145/3620665.3640365},
+  pages = {1165–1182},
+  location = {La Jolla, CA, USA},
+  series = {ASPLOS '24}
 }
 ```
 
