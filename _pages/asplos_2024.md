@@ -21,7 +21,7 @@ Researchers and developers interested in deep learning systems, compiler develop
 # Logistics
 - **Venue:** [ASPLOS 2024](https://www.asplos-conference.org/asplos2024/)
 - **Date:** April 28, 2024
-- **Time:** 1:30 PM - 5:30 PM PST
+- **Time:** 1:30 PM - 5:00 PM PST
 - **Registration:** To secure your spot for our tutorial, please sign up for at least a "One-day Workshops/Tutorials Registration". You can register [here](https://whova.com/portal/registration/asplo_202403/).
 
 # Schedule
@@ -34,14 +34,16 @@ Researchers and developers interested in deep learning systems, compiler develop
 | | | _GeneSys_ for research | | |
 | | | _GeneSys_ for teaching | | |
 | **1:50 PM** | **2:20 PM** | **Motivation** | Rohan | |
-| **2:20 PM** | **3:00 PM** | **_GeneSys_ Architecture** | Hanyang | | 
-| **3:00 PM** | **3:30 PM** | **_GeneSys_ Verification** | Hanyang | |
-| **4:00 PM** | **5:00 PM** | **_GeneSys_ Compiler** | Chris | |
-| **5:00 PM** | **5:15 PM** | **Runtime and Drivers** | Hanyang | |
-| **5:15 PM** | **5:30 PM** | **_GeneSys_ Software Simulator** | Hanyang | |
+| **2:20 PM** | **3:00 PM** | **_GeneSys_ Architecture** | Soroush Ghodrati | | 
+| **3:00 PM** | **3:30 PM** | Afternoon Break | | | 
+| **3:30 PM** | **4:00 PM** | **_GeneSys_ Verification** | Hanyang | |
+| **4:00 PM** | **4:30 PM** | **_GeneSys_ Compiler** | Chris | |
+| **4:30 PM** | **4:45 PM** | **Runtime and Drivers** | Hanyang | |
+| **4:45 PM** | **5:00 PM** | **_GeneSys_ Software Simulator** | Hanyang | |
 
 # Presenters
 - **Hadi Esmaeilzadeh**: Halicioğlu Chair in computer architecture and professor at the University of California, San Diego
+- **Soroush Ghodrati**: System Architect at Apple
 - **Rohan Mahapatra**: Ph.D. student in computer science and engineering at the University of California, San Diego
 - **Hanyang Xu**: Ph.D. student in computer science and engineering at the University of California, San Diego
 - **Christopher Priebe**: Ph.D. student in computer science and engineering at the University of California, San Diego
