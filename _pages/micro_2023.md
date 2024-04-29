@@ -35,10 +35,10 @@ Researchers and developers interested in deep learning systems, compiler develop
 | | | Systolic array <br /> SIMD array <br /> On-chip memory architecture and memory interface | | [video](https://youtu.be/ZcIiuOYtepo) |
 | | | Tiled execution | | [video](https://youtu.be/0BbQONPVFyE) |
 | **1:50 PM** | **2:30 PM** | **_GeneSys_ Verification** | Lavanya | [slides](https://drive.google.com/file/d/1xCwBLS6qwOU3qSmTj65pPdOrC9lPvhEE/view?usp=sharing) |
-| | | RTL simulation | | |
-| | | Hardware emulation | | |
-| | | FPGA implementation and synthesis | | |
-| | | Python driver | | |
+| | | RTL simulation | | [video](https://youtu.be/rXMd_-Cs5sw) |
+| | | Hardware emulation | | [video](https://youtu.be/qN7CAFNsvRk) |
+| | | FPGA implementation and synthesis | | [video](https://youtu.be/S8A0udKtAYc) |
+| | | Python driver | | [video](https://youtu.be/MCDG7RsdcLM) |
 | | | *Interactive Activity:* Configuring GeneSys 16x16; observe it is 16x16; run a single layer | | |
 | | | *Interactive Activity:* Configuring GeneSys 4x4; observe it is 4x4; run same layer | | |
 | | | *Demo:* FPGA | | |
