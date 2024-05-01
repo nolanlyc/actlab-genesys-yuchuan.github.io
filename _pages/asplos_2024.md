@@ -2,7 +2,7 @@
 layout: page
 permalink: /tutorials/asplos_2024
 title: ASPLOS 2024
-description: 
+description: GeneSys Tutorial | April 28, 2024 | 1:30 PM - 5:00 PM PST | Grande D
 nav: false
 nav_order: 0
 ---
@@ -33,11 +33,25 @@ Researchers and developers interested in deep learning systems, compiler develop
 | | | Introduction to _GeneSys_ | | |
 | | | _GeneSys_ for research | | |
 | | | _GeneSys_ for teaching | | |
-| **1:50 PM** | **2:20 PM** | **Motivation** | Rohan | |
-| **2:20 PM** | **3:00 PM** | **_GeneSys_ Architecture** | Soroush Ghodrati | | 
-| **3:00 PM** | **3:30 PM** | Afternoon Break | | | 
+| **1:50 PM** | **2:00 PM** | **Motivation** | Rohan | [slides](https://drive.google.com/file/d/1jNKl7vr2VSOMYfU--JscGImHKzmXJTuz/view?usp=sharing) |
+| | | Neural networks and hardware acceleration | | |
+| | | Inference pipeline – datacenters and edge | | |
+| | | Systems challenges and opportunities | | |
+| | | Overview of _GeneSys_ | | |
+| | | Example usage of _GeneSys_ in research projects | | |
+| **2:00 PM** | **3:00 PM** | **_GeneSys_ Architecture** | Soroush | | 
+| **3:00 PM** | **3:30 PM** | *Afternoon Break* | | | 
+| **3:30 PM** | **4:30 PM** | **_GeneSys_ Compiler** | Chris | [slides](https://drive.google.com/file/d/1tSkvlXoaMRwQNYQOldDi65vo1Lj276GA/view?usp=sharing) |
+| | | Introduction to compilation | | |
+| | | Compilation challenges for DNN accelerators | | |
+| | | _f_-DFG frontend | | |
+| | | Codelet backend | | |
+| | | Compiler overview | | |
+| | | Using the compiler and it to your needs | | |
+| | | Realities about end-to-end applications | | |
+| | | *FhY*: Cross-domain compilation stack for multi-acceleration | | |
+| | | *Demo:* Compiling ResNet50, changing tiling, loop order, on-chip buffers, fusing layers | | video coming soon... |
 | **3:30 PM** | **4:00 PM** | **_GeneSys_ Verification** | Hanyang | |
-| **4:00 PM** | **4:30 PM** | **_GeneSys_ Compiler** | Chris | |
 | **4:30 PM** | **4:45 PM** | **Runtime and Drivers** | Hanyang | |
 | **4:45 PM** | **5:00 PM** | **_GeneSys_ Software Simulator** | Hanyang | |
 
