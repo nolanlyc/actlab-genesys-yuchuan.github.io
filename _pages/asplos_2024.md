@@ -29,40 +29,17 @@ Researchers and developers interested in deep learning systems, compiler develop
 | Start (EST) | End (EST) | Agenda | Presenter | Resources |
 | :---------: | :-------: | :----- | :-------: | :-------: | 
 | **1:30 PM** | **1:50 PM** | **Introduction** | Hadi | [slides](https://drive.google.com/file/d/1p0Q790UhU0BNazOf7gDTU9q8qqxPTd8w/view?usp=sharing) |
-| | | History and challenges of hardware acceleration | | |
-| | | Introduction to _GeneSys_ | | |
+| | | History and challenges of hardware acceleration <br /> Introduction to _GeneSys_ | | [video](https://youtu.be/pHbY0No3MCU) |
 | **1:50 PM** | **2:00 PM** | **Motivation** | Rohan | [slides](https://drive.google.com/file/d/1jNKl7vr2VSOMYfU--JscGImHKzmXJTuz/view?usp=sharing) |
-| | | Neural networks and hardware acceleration | | |
-| | | Inference pipeline – datacenters and edge | | |
-| | | Systems challenges and opportunities | | |
-| | | Overview of _GeneSys_ | | |
-| | | Example usage of _GeneSys_ in research projects | | |
+| | | Neural networks and hardware acceleration <br /> Inference pipeline – datacenters and edge <br /> Systems challenges and opportunities <br /> Overview of _GeneSys_ <br /> Example usage of _GeneSys_ in research projects | | [video](https://youtu.be/Z8OYHT1-kmk) |
 | **2:00 PM** | **3:00 PM** | **_GeneSys_ Architecture** | Soroush | [slides](https://drive.google.com/file/d/1V3ROnTi7FAZ_Z_1YU9QW9qobb572tRx8/view?usp=sharing) | 
-| | | _GeneSys_ NPU overview | | |
-| | | Systolic array | | |
-| | | On-chip memory architecture and memory interface | | |
-| | | Tandem processor | | |
-| | | End-to-end neural network execution | | |
-| | | ISA | | |
+| | | _GeneSys_ NPU overview <br /> Systolic array <br /> On-chip memory architecture and memory interface <br /> Tandem processor <br /> End-to-end neural network execution <br /> ISA | | [video](https://youtu.be/IpW-7lXNiB0) |
 | **3:00 PM** | **3:30 PM** | *Afternoon Break* | | | 
 | **3:30 PM** | **4:30 PM** | **_GeneSys_ Compiler** | Chris | [slides](https://drive.google.com/file/d/1tSkvlXoaMRwQNYQOldDi65vo1Lj276GA/view?usp=sharing) |
-| | | Introduction to compilation | | |
-| | | Compilation challenges for DNN accelerators | | |
-| | | _f_-DFG frontend | | |
-| | | Codelet backend | | |
-| | | Compiler overview | | |
-| | | Using the compiler and it to your needs | | |
-| | | Realities about end-to-end applications | | |
-| | | *FhY:* Cross-domain compilation stack for multi-acceleration | | |
+| | | Introduction to compilation <br /> Compilation challenges for DNN accelerators <br /> _f_-DFG frontend <br /> Codelet backend <br /> Compiler overview <br /> Using the compiler and it to your needs <br /> Realities about end-to-end applications <br /> *FhY:* Cross-domain compilation stack for multi-acceleration | | [video](https://youtu.be/W_L9zNw_NAo) |
 | | | *Demo:* Compiling ResNet50, changing tiling, loop order, on-chip buffers, fusing layers | | video coming soon... |
 | **4:30 PM** | **5:00 PM** | **_GeneSys_ Uses, Verification, and Software Simulator** | Hanyang | [slides](https://drive.google.com/file/d/1uQec9sBoE3-6rlWfjsw_BzisL47msEsR/view?usp=sharing) |
-| | | Example problem: data motion acceleration | | |
-| | | Example problem: neuromodulation for brain-implantable devices | | |
-| | | Quantization on _GeneSys_ | | |
-| | | Python APIs | | |
-| | | Software simulator | | |
-| | | RTL simulation | | |
-| | | Validation with FPGA | | |
+| | | Example problem: data motion acceleration <br /> Example problem: neuromodulation for brain-implantable devices <br /> Quantization on _GeneSys_ <br /> Python APIs <br /> Software simulator <br /> RTL simulation <br /> Validation with FPGA | | [video](https://youtu.be/Sz-h7kPhqvo) |
 
 # Presenters
 - **Hadi Esmaeilzadeh**: Halicioğlu Chair in computer architecture and professor at the University of California, San Diego
