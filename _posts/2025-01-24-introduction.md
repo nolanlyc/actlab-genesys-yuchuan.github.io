@@ -17,10 +17,10 @@ Whether you are an experienced researcher, an industry professional, or just get
 As GeneSys continues to evolve, we recognize the importance of sharing our progress with the community. 
 This blog will serve as a platform to:  
 
-- **Provide Updates:** Stay informed on the latest enhancements, optimizations, and design changes in GeneSys. We will share insights into our ongoing research and development efforts.  
-- **Offer Tutorials and Exercises:** Whether you are new to GeneSys or looking to deepen your understanding, our blog will feature hands-on guides, practical exercises, and example applications to help you make the most of our architecture.  
-- **Engage with the Community:** We aim to foster an open dialogue by sharing our findings and listening to your feedback, questions, and ideas.  
+- **Provide Updates:** Stay informed on the latest enhancements, optimizations, and design changes in GeneSys. The team will share insights into our ongoing research and development efforts.  
+- **Offer Tutorials and Exercises:** Whether you are new to GeneSys or looking to deepen your understanding, the blog will feature hands-on guides, practical exercises, and example applications to help you make the most of our architecture.  
+- **Engage with the Community:** The team aims to foster an open dialogue by sharing their findings and listening to your feedback, questions, and ideas.  
 
-We invite you to **follow** and **contribute** to the conversation as we continue our journey of reimagining acceleration with GeneSys.    
+I invite you to **follow** and **contribute** to the conversation as we continue our journey of reimagining acceleration with GeneSys.    
 
 **— Chris**
