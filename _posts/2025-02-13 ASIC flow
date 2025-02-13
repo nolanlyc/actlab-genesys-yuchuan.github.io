@@ -51,8 +51,9 @@ openRAM/
         Memory size/type configuration file.
 
 
-# 2. Synthesis Work Flow
-# Runing Synthesis
+## 2. Synthesis Work Flow
+
+## Runing Synthesis
 1. Download RTL source code, set your RTL path in run_dc.tcl.
 2. Generate your own filelist, including all RTL you need for synthesis, set filelist path in run_dc.tcl
 3. Set all standard cell and memory library path, Synopsys only support .db format (You can convert .lib to .db using Library Compiler).
