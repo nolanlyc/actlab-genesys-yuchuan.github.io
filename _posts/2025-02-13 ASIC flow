@@ -1,0 +1,92 @@
+---
+layout: post
+title: "GeneSys ASIC Synthesis Flow"
+date: 2025-02-13
+tags: [Synthesis, Memory Compiler]
+categories: posts
+author: Yuchuan Li
+---
+
+In this blog, we explore the ASIC synthesis flow for our hardware system, detailing the steps from RTL design to gate-level netlist generation. 
+ASIC synthesis is a crucial phase in digital design, where high-level HDL descriptions (Verilog/VHDL) are transformed into an optimized gate-level representation for fabrication.
+
+We will cover:
+✅ Design preparation – setting up RTL, constraints, and libraries.
+✅ Logic synthesis – converting HDL to gates using Synopsys Design Compiler.
+✅ Memory Compiler – memory lib generation.
+
+
+# 1. Directory Structure and Script Usage
+syn/ 
+    
+    Directory for logic synthesis
+    
+    --run.py:
+        Synthesis launch script, use -h for more information. 
+        Provide argument --top to specify your top design, --verison for different version, --debug for link error debug.
+        Example: ./run.py --top genesys_top_module --version v1_test
+        
+    --run_dc.tcl
+        Synthesis main tcl script, please edit all the lib/rtl path if needed.
+
+    --read_rtl_genesys.tcl
+        An example filelist for synthesis which include all RTL file for your design.
+
+    syn/rpt
+        Synthesis result report
+    syn/log
+        Synthesis dc_shell log file for debugging
+    syn/gate
+        Synthesis output Netlist and DDC file
+
+openRAM/
+    
+    Directory for memory lib generation from open source memory compiler: https://github.com/VLSIDA/OpenRAM.
+    
+    --sram_compiler.py
+        Sram compiler launch script.
+        Example: ./sram_compiler.py myconfig -v   //Note: it takes upto 1 hour to compile large sram.
+    
+    --myconfig.py
+        Memory size/type configuration file.
+
+
+# 2. Synthesis Work Flow
+# Runing Synthesis
+1. Download RTL source code, set your RTL path in run_dc.tcl.
+2. Generate your own filelist, including all RTL you need for synthesis, set filelist path in run_dc.tcl
+3. Set all standard cell and memory library path, Synopsys only support .db format (You can convert .lib to .db using Library Compiler).
+4. Check correctness of RTL syntax and library setup using "--debug" (Synthesis will stop if syntax or link error is detected).
+   
+   4.1  Make sure "analyze -format sverilog -lib $design_lib  $rtl_all" and "elaborate $top_module -lib $design_lib" command does not have any errors.
+   
+   4.2  Make sure link command return 1, and your design does not have the link warning "Warning: Unable to resolve reference", which means some parts in your design is missing (missing file and submodule)
+5. Define the clock port and target frequency in MHz.
+
+# Checking Synthesis Result and Debug
+1. All area, power and QoR result is in rpt/ directory.
+2. Script **get_area_breakdown.py** and **get_power_breakdown.py** extracts and filters data from raw report. Run the script with the following command:  
+   ```sh
+   python get_power_summary.py <file_path> -t <threshold> -d <hierarchy_level>
+   python get_area_summary.py <file_path> -t <threshold> -d <hierarchy_level>
+3. To recover previous session for debugging, use 'read_ddc' command in dc_shell to reload DDC file in gate/ directory.
+
+# 3. **OpenRAM SRAM Compiler Work Flow**
+
+## **1. Overview**
+This is a **Python-based SRAM compiler** that generates **memory layout, circuit, and characterization files** using **OpenRAM**.  
+The compiler supports **various process corners, voltage levels, and temperature settings** for characterization.
+
+## **2. Installation & Setup**
+
+### **▶ Running the Compiler**
+1. Place your **configuration file** (e.g., `myconfig.py`) in the working directory, and edit the required configuration.
+2. Execute the SRAM compiler:
+   ```sh
+   python sram_compiler.py myconfig.py
+
+# 4. Library Compiler
+1. Type lc_shell in command line to start.
+2. use "read_lib user_defined_path/xxx.lib" to read in your .lib, and "write_lib user_defined_name -output user_defined_path/xxx.db" command to write .db file.
+
+**— Yuchuan **
